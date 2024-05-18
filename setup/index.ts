@@ -1,12 +1,12 @@
 import diff from 'fast-diff';
-import { readFile, stat } from 'node:fs/promises';
+import { readFile, stat, symlink } from 'node:fs/promises';
+import { resolve } from 'node:path';
 
 async function fileExist(path: string) {
   try {
     await stat(path)
     return true
   } catch (err) {
-    console.log(err);
     if (err instanceof Error && 'code' in err && err.code === 'ENOENT') {
       return false
     }
@@ -25,6 +25,8 @@ function printDiff(patch: diff.Diff[]) {
 async function makeSoftLink(from: string, to: string) {
   from = from.replace(/^~\//, process.env.HOME + '/');
   to = to.replace(/^~\//, process.env.HOME + '/');
+  from = resolve(from);
+  to = resolve(to);
 
   console.log();
 
@@ -54,8 +56,9 @@ async function makeSoftLink(from: string, to: string) {
     return
   }
   // Create soft link
+  await symlink(from, to)
 
-  console.log('file doesn\'t exist')
+  console.log(`Soft link created.`)
 }
 
 async function main() {
