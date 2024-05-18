@@ -1,11 +1,10 @@
 import diff from 'fast-diff';
-import { readFile, stat, symlink } from 'node:fs/promises';
+import { lstat, readFile, readlink, rm, symlink } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
 async function fileExist(path: string) {
   try {
-    await stat(path)
-    return true
+    return await lstat(path)
   } catch (err) {
     if (err instanceof Error && 'code' in err && err.code === 'ENOENT') {
       return false
@@ -37,23 +36,31 @@ async function makeSoftLink(from: string, to: string) {
 
   console.log(`Creating soft link from ${from} to ${to}`)
 
-  if (await fileExist(to)) {
-    console.log(`File ${to} already exists.`)
+  const stat = await fileExist(to)
+  if (stat) {
     const contentFrom = await readFile(from, 'utf-8')
     const contentTo = await readFile(to, 'utf-8')
 
     const differences = diff(contentFrom, contentTo)
     if (differences.length === 1) {
-      console.log(`Files are the same. Skipping...`)
+      if (stat.isSymbolicLink()) {
+        const link = await readlink(to)
+        if (link === from) {
+          console.log(`Soft link already exists.`)
+        } else {
+          console.log(`Soft link already exists but points to a different file. ${link}`)
+        }
+        return
+      }
+      rm(to)
+    } else {
+      console.log(`Files are different. Printing diff...`)
+      printDiff(differences)
+
+      console.log(`Do you want to overwrite ${to}?`)
+
       return
     }
-
-    console.log(`Files are different. Printing diff...`)
-    printDiff(differences)
-
-    console.log(`Do you want to overwrite ${to}?`)
-
-    return
   }
   // Create soft link
   await symlink(from, to)
