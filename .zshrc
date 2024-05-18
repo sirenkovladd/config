@@ -1,13 +1,15 @@
 export PATH=/usr/local/bin:$PATH
 export PATH="/opt/homebrew/bin:$PATH"
-export PATH="/Users/vlad/.local/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export PATH="/opt/homebrew/opt/llvm@15/bin:$PATH"
+export PATH="/opt/homebrew/opt/llvm@16/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export PATH="/Applications/kitty.app/Contents/MacOS:$PATH"
-export FPATH="~/programming/eza/completions/zsh:$FPATH"
-# bun
-export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
+export FPATH="$HOME/programming/eza/completions/zsh:$FPATH"
+export BUN_INSTALL="$HOME/.bun"
 export ZSH="$HOME/.oh-my-zsh"
+
 ZSH_THEME="robbyrussell"
 
 # CASE_SENSITIVE="true"
@@ -30,17 +32,16 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 plugins=(git kubectl aws brew docker docker-compose eza helm kubectx mise node fzf ripgrep)
 
 source $ZSH/oh-my-zsh.sh
+compinit -u
 
 # export LANG=en_US.UTF-8
 
-eval "$(starship init zsh)"
 export GPG_TTY=$(tty)
 
-# bun completions
-[ -s "/Users/vlad/.bun/_bun" ] && source "/Users/vlad/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
-eval "$(/Users/vlad/.local/bin/mise activate zsh)"
-
+eval "$(starship init zsh)"
+eval "$(mise activate zsh)"
 eval "$(mise completion zsh)"
 eval "$(zoxide init zsh)"
 
@@ -49,8 +50,3 @@ alias ls="eza"
 alias ll="ls -lohUmZ --git --time-style=long-iso --no-permissions"
 alias du="ncdu"
 alias lg="lazygit"
-
-# for f in `ls ~/.kube/config/`
-# do
-#     export KUBECONFIG="$HOME/.kube/config/$f:$KUBECONFIG";
-# done

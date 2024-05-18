@@ -59,8 +59,8 @@ async function makeSoftLink(from: string, to: string) {
 }
 
 async function main() {
-  await makeSoftLink('../config/mise.toml', '~/.config/mise/config.toml')
-  await makeSoftLink('../.zshrc', '~/.zshrc')
+  await makeSoftLink('./config/mise.toml', '~/.config/mise/config.toml')
+  await makeSoftLink('./.zshrc', '~/.zshrc')
 }
 
 main();

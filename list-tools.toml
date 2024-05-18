@@ -1,0 +1,30 @@
+cargo = [
+  "bandwhich",
+  "bottom",
+  "cargo-make",
+  "du-dust",
+  "eza",
+  "flamegraph",
+  "git-delta",
+  "zoxide",
+]
+
+brew = [
+  "bat",
+  "brotli",
+  "cloudflared",
+  "jq",
+  "fd",
+  "fzf",
+  "hyperfine",
+  "lazygit",
+  "ncdu",
+  "redis",
+  "ripgrep",
+  "scrcpy",
+  "socat",
+  "tig",
+  "tmux",
+  "tree",
+  "yazi",
+]
