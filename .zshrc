@@ -7,8 +7,11 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="/Applications/kitty.app/Contents/MacOS:$PATH"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-export FPATH="$HOME/programming/eza/completions/zsh:$FPATH"
+export FPATH="$(dirname $(realpath ~/.zshrc))/completions:$FPATH"
 export ZSH="$HOME/.oh-my-zsh"
+echo $(/bin/pwd)
+echo $(pwd)
+echo $(realpath)
 
 ZSH_THEME="robbyrussell"
 
@@ -50,4 +53,4 @@ alias ls="eza"
 alias ll="ls -lohUmZ --git --time-style=long-iso --no-permissions"
 alias du="ncdu"
 alias lg="lazygit"
-alias cat="bat"
+alias cat="bat -P"

@@ -1,6 +1,7 @@
 [tools]
 node = "20.13.1"
 watchexec = "2.1.1"
+usage = "latest"
 
 [settings]
 legacy_version_file = true
