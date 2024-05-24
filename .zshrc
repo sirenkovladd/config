@@ -9,9 +9,6 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export FPATH="$(dirname $(realpath ~/.zshrc))/completions:$FPATH"
 export ZSH="$HOME/.oh-my-zsh"
-echo $(/bin/pwd)
-echo $(pwd)
-echo $(realpath)
 
 ZSH_THEME="robbyrussell"
 
@@ -32,7 +29,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git kubectl aws brew docker docker-compose eza helm kubectx mise node fzf ripgrep)
+plugins=(git kubectl aws brew docker docker-compose eza helm kubectx mise node fzf ripgrep rust)
 
 source $ZSH/oh-my-zsh.sh
 compinit -u

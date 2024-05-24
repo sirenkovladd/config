@@ -7,6 +7,9 @@ cargo = [
   "flamegraph",
   "git-delta",
   "zoxide",
+  "hexyl",
+  "cargo-binstall",
+  "hyperfine",
 ]
 
 brew = [
@@ -16,7 +19,6 @@ brew = [
   "jq",
   "fd",
   "fzf",
-  "hyperfine",
   "lazygit",
   "ncdu",
   "redis",
@@ -27,4 +29,8 @@ brew = [
   "tmux",
   "tree",
   "yazi",
+]
+
+other = [
+  "jq",
 ]
