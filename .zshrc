@@ -32,12 +32,14 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 plugins=(git kubectl aws brew docker docker-compose eza helm kubectx mise node fzf ripgrep rust)
 
 source $ZSH/oh-my-zsh.sh
+
 compinit -u
 
 # export LANG=en_US.UTF-8
 
 export GPG_TTY=$(tty)
 
+# bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 eval "$(starship init zsh)"
@@ -51,3 +53,4 @@ alias ll="ls -lohUmZ --git --time-style=long-iso --no-permissions"
 alias du="ncdu"
 alias lg="lazygit"
 alias cat="bat -P"
+alias clear="printf '\033[2J\033[3J\033[1;1H'"
