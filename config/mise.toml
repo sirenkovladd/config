@@ -3,6 +3,7 @@ node = "20.13.1"
 watchexec = "2.1.1"
 usage = "latest"
 zellij = "latest"
+difftastic = "latest"
 
 [settings]
 legacy_version_file = true

@@ -9,6 +9,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export FPATH="$(dirname $(realpath ~/.zshrc))/completions:$FPATH"
 export ZSH="$HOME/.oh-my-zsh"
+export GIT_EXTERNAL_DIFF=difft
 
 ZSH_THEME="robbyrussell"
 
