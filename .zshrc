@@ -55,3 +55,5 @@ alias du="ncdu"
 alias lg="lazygit"
 alias cat="bat -P"
 alias clear="printf '\033[2J\033[3J\033[1;1H'"
+alias mise-upgrade="curl https://mise.run | sh"
+

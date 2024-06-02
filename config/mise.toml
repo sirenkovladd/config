@@ -1,9 +1,21 @@
 [tools]
 node = "20.13.1"
-watchexec = "2.1.1"
+watchexec = "latest"
 usage = "latest"
 zellij = "latest"
 difftastic = "latest"
+lazygit = "latest"
+bat = "latest"
+bottom = "latest"
+dust = "latest"
+fd = "latest"
+fzf = "latest"
+jq = "latest"
+kubectl = "latest"
+redis-cli = "latest"
+ripgrep = "latest"
+zoxide = "latest"
+zig = "latest"
 
 [settings]
 legacy_version_file = true
@@ -19,7 +31,7 @@ not_found_auto_install = true # see MISE_NOT_FOUND_AUTO_INSTALL
 task_output = "prefix"        # see Tasks Runner for more information
 paranoid = false              # see MISE_PARANOID
 
-shorthands_file = '~/.config/mise/shorthands.toml' # path to the shorthands file, see `MISE_SHORTHANDS_FILE`
+# shorthands_file = '~/.config/mise/shorthands.toml' # path to the shorthands file, see `MISE_SHORTHANDS_FILE`
 disable_default_shorthands = false # disable the default shorthands, see `MISE_DISABLE_DEFAULT_SHORTHANDS`
 disable_tools = [
   # 'node',
