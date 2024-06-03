@@ -30,7 +30,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git kubectl aws brew docker docker-compose eza helm kubectx mise node fzf ripgrep rust)
+plugins=(git kubectl aws brew docker docker-compose eza helm kubectx mise node fzf ripgrep rust asdf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -56,4 +56,3 @@ alias lg="lazygit"
 alias cat="bat -P"
 alias clear="printf '\033[2J\033[3J\033[1;1H'"
 alias mise-upgrade="curl https://mise.run | sh"
-
