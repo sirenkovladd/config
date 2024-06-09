@@ -17,6 +17,7 @@ ripgrep = "latest"
 zoxide = "latest"
 zig = "latest"
 eza = "latest"
+bun = "latest"
 
 [settings]
 legacy_version_file = true
