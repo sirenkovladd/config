@@ -1,0 +1,33 @@
+[core]
+	editor = code --wait
+[merge]
+	tool = code
+[diff]
+	tool = difftastic
+[difftool]
+	prompt = false
+
+[difftool "difftastic"]
+	cmd = difft "$LOCAL" "$REMOTE"
+[pager]
+	difftool = true
+[alias]
+	ci = commit
+	c = checkout
+	cb = checkout -b
+	ca = commit --amend --no-edit
+	pf = push --force-with-lease
+	r = reset HEAD~1
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
+[tag]
+	gpgsign = true

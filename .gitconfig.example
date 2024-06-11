@@ -1,0 +1,6 @@
+[user]
+  email = vlad@sirenko.ca
+  name = Vlad Sirenko
+ signingkey = 1111111111
+[include]
+	path = ~/programming/config/.gitconfig
