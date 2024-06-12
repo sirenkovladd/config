@@ -1,0 +1,239 @@
+{
+  "bookmarks.saveBookmarksInProject": true,
+  "bookmarks.sideBar.expanded": true,
+  "code-runner.fileDirectoryAsCwd": true,
+  "cSpell.language": "en,uk",
+  "cSpell.userWords": [
+    "autofetch",
+    "AUTOINCREMENT",
+    "autolinks",
+    "biomejs",
+    "cdid",
+    "connectionpool",
+    "conv",
+    "datetime",
+    "doublebot",
+    "Elysia",
+    "Fetchable",
+    "fullname",
+    "geoip",
+    "Hasher",
+    "haxelib",
+    "Horla",
+    "luxon",
+    "minio",
+    "nestjs",
+    "rabbitmq",
+    "Shanns",
+    "sirenko",
+    "SYNP",
+    "timeoutinmilliseconds",
+    "vanjs",
+    "wireit",
+    "ziglang"
+  ],
+  "debug.javascript.autoAttachFilter": "onlyWithFlag",
+  "debug.javascript.resourceRequestOptions": {},
+  "diffEditor.wordWrap": "on",
+  "doublebot.enableAutocomplete": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "explicit"
+  },
+  "editor.experimentalInlineEdit.fontFamily": "'ComicShannsMono Nerd Font'",
+  "editor.fontFamily": "'ComicShannsMono Nerd Font'",
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.multiCursorLimit": 20000,
+  "editor.showFoldingControls": "always",
+  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.maxLineCount": 10,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.unicodeHighlight.ambiguousCharacters": true,
+  "editor.unicodeHighlight.invisibleCharacters": true,
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.eol": "\n",
+  "files.hotExit": "onExitAndWindowClose",
+  "git-graph.dialog.resetCurrentBranchToCommit.mode": "Hard",
+  "git-graph.repository.commits.fetchAvatars": true,
+  "git-graph.repository.commits.showSignatureStatus": true,
+  "git-graph.repository.showUncommittedChanges": false,
+  "git-graph.repository.sign.commits": true,
+  "git-graph.repository.sign.tags": true,
+  "git.allowForcePush": true,
+  "git.autofetch": true,
+  "git.confirmForcePush": false,
+  "git.confirmSync": false,
+  "git.enableCommitSigning": true,
+  "git.mergeEditor": false,
+  "git.suggestSmartCommit": false,
+  "github.copilot.advanced": {},
+  "github.copilot.editor.enableAutoCompletions": false,
+  "github.copilot.enable": {
+    "*": false
+  },
+  "gitlens.advanced.messages": {
+    "suppressCreatePullRequestPrompt": true
+  },
+  "gitlens.autolinks": [
+    {
+      "prefix": "LOOP-",
+      "url": "https://jira.udev.in/browse/LOOP-<num>"
+    },
+    {
+      "alphanumeric": false,
+      "ignoreCase": false,
+      "prefix": "<num>",
+      "url": "https://jira.udev.in/browse/LOOP-<num>"
+    },
+    {
+      "prefix": "loop-",
+      "url": "https://jira.udev.in/browse/LOOP-<num>"
+    },
+    {
+      "prefix": "[",
+      "url": "https://jira.udev.in/browse/LOOP-<num>"
+    },
+    {
+      "prefix": "loop_",
+      "url": "https://jira.udev.in/browse/LOOP-<num>"
+    }
+  ],
+  "gitlens.codeLens.enabled": false,
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "stash-apply:command"
+  ],
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.menus": {
+    "editorGroup": {
+      "blame": true,
+      "compare": true
+    },
+    "editorTab": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "explorer": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "scm": {
+      "authors": true
+    },
+    "scmGroup": {
+      "compare": true,
+      "openClose": true,
+      "stash": true
+    },
+    "scmGroupInline": {
+      "stash": true
+    },
+    "scmItem": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": false,
+      "stash": true
+    }
+  },
+  "gitlens.remotes": [],
+  "gitlens.views.commits.files.layout": "tree",
+  "gitlens.views.contributors.showAllBranches": true,
+  "gitlens.views.contributors.showStatistics": true,
+  "gitlens.views.formats.commits.label": "${changesShort} ${message}",
+  "gitlens.views.remotes.branches.layout": "list",
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": false,
+  "javascript.inlayHints.parameterTypes.enabled": false,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": false,
+  "javascript.inlayHints.variableTypes.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "javascript.validate.enable": true,
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "npm.enableRunFromFolder": true,
+  "npm.packageManager": "bun",
+  "npm.scriptExplorerAction": "run",
+  "projectManager.any.maxDepthRecursion": 2,
+  "projectManager.git.baseFolders": [
+    "~/node",
+    "~/programming",
+    "~/code",
+    "~/glia"
+  ],
+  "projectManager.git.ignoredFolders": [
+    "node_modules",
+    "out",
+    "typings",
+    "test",
+    ".haxelib",
+    "data"
+  ],
+  "projectManager.hg.maxDepthRecursion": 2,
+  "projectManager.svn.ignoredFolders": [
+    "node_modules",
+    "out",
+    "typings",
+    "test",
+    "data"
+  ],
+  "projectManager.svn.maxDepthRecursion": 2,
+  "projectManager.vscode.ignoredFolders": [
+    "node_modules",
+    "out",
+    "typings",
+    "test",
+    "data"
+  ],
+  "projectManager.vscode.maxDepthRecursion": 2,
+  "rest-client.enableCustomVariableReferencesCodeLens": false,
+  "rest-client.logLevel": "verbose",
+  "rest-client.timeoutinmilliseconds": 15000,
+  "security.workspace.trust.untrustedFiles": "open",
+  "settingsSync.ignoredSettings": [
+    "github.copilot.enable",
+    "doublebot.enableAutocomplete",
+    "github.copilot.advanced",
+    "github.copilot.editor.enableAutoCompletions"
+  ],
+  "task.allowAutomaticTasks": "on",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "terminal.integrated.fontFamily": "'ComicShannsMono Nerd Font'",
+  "terminal.integrated.fontSize": 11,
+  "typescript.inlayHints.enumMemberValues.enabled": false,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
+  "typescript.inlayHints.parameterNames.enabled": "literals",
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "typescript.tsserver.log": "off",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "window.commandCenter": true,
+  "window.newWindowDimensions": "offset",
+  "window.zoomLevel": -0.7,
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Horla",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "zig.initialSetupDone": true,
+  "zig.path": "/Users/vlad/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
+  "zig.zls.path": "/Users/vlad/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  }
+}
