@@ -13,6 +13,10 @@
   },
   "scripts": {
     "setup": "bun setup/index.ts",
-    "tools": "bun setup/check-missing.ts"
+    "tools": "bun setup/check-missing.ts",
+    "vscode:settings": "code --diff vscode/settings.json ~/Library/Application\\ Support/Code/User/settings.json",
+    "vscode:keybindings": "code --diff vscode/keybindings.json ~/Library/Application\\ Support/Code/User/keybindings.json",
+    "vscode:extensions": "bun vscode/ext.js",
+    "vscode": "bun vscode:settings && bun vscode:keybindings && bun vscode:extensions"
   }
 }
