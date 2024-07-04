@@ -18,6 +18,9 @@ zoxide = "latest"
 zig = "latest"
 eza = "latest"
 bun = "latest"
+python = "3.10"
+k9s = "latest"
+starship = "latest"
 
 [settings]
 legacy_version_file = true

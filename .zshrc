@@ -30,10 +30,9 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(mise git kubectl aws brew docker docker-compose eza helm kubectx node fzf ripgrep rust asdf)
+plugins=(mise git kubectl aws brew docker docker-compose eza helm kubectx fzf ripgrep rust asdf)
 
 source $ZSH/oh-my-zsh.sh
-
 compinit -u
 
 # export LANG=en_US.UTF-8
@@ -44,8 +43,6 @@ export GPG_TTY=$(tty)
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 eval "$(starship init zsh)"
-eval "$(mise activate zsh)"
-eval "$(mise completion zsh)"
 eval "$(zoxide init zsh)"
 alias ssh="kitten ssh"
 alias ls="eza"
