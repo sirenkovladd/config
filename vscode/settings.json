@@ -219,7 +219,6 @@
   "typescript.tsserver.experimental.enableProjectDiagnostics": true,
   "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "never",
-  "window.commandCenter": true,
   "window.newWindowDimensions": "offset",
   "window.zoomLevel": -0.7,
   "workbench.activityBar.location": "top",
@@ -234,6 +233,12 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
     "editor.defaultFormatter": "biomejs.biome"
   }
 }
