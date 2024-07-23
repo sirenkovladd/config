@@ -21,6 +21,7 @@ bun = "latest"
 python = "3.10"
 k9s = "latest"
 starship = "latest"
+rclone = "latest"
 
 [settings]
 legacy_version_file = true
