@@ -54,4 +54,11 @@ alias clear="printf '\033[2J\033[3J\033[1;1H'"
 alias mise-upgrade="curl https://mise.run | sh"
 alias kitty-upgrade="curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin"
 
+# K8S
+alias k="kubectl"
+alias kx="kubectx"
+alias kn="kubens"
+
+# displayplacer "id:1 res:1920x1080 scaling:off origin:(0,0) degree:0" "id:2 res:1920x1080 scaling:off origin:(1920,0) degree:0"
+
 [ -s "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
