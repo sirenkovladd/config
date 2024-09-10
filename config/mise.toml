@@ -9,7 +9,7 @@ bat = "latest"
 bottom = "latest"
 dust = "latest"
 fd = "latest"
-ubi = "latest"
+ubi = "0.1.1"
 jq = "latest"
 kubectl = "latest"
 redis-cli = "latest"
@@ -25,6 +25,7 @@ rclone = "latest"
 "cargo:ezno" = "latest"
 go = "latest"
 "ubi:junegunn/fzf" = "latest"
+duckdb = "latest"
 
 [settings]
 legacy_version_file = true
