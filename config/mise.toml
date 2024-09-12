@@ -26,6 +26,7 @@ rclone = "latest"
 go = "latest"
 "ubi:junegunn/fzf" = "latest"
 duckdb = "latest"
+deno = "latest"
 
 [settings]
 legacy_version_file = true
