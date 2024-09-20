@@ -8,7 +8,7 @@
   "preferred_line_length": 200,
   "soft_wrap": "editor_width",
   "show_whitespaces": "all",
-  "format_on_save": "on",
+  "format_on_save": "off",
   "active_pane_magnification": 0,
   "always_treat_brackets_as_autoclosed": true,
   "auto_update": true,

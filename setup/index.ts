@@ -71,6 +71,7 @@ async function makeSoftLink(from: string, to: string) {
 async function main() {
   await makeSoftLink('./config/mise.toml', '~/.config/mise/config.toml')
   await makeSoftLink('./.zshrc', '~/.zshrc')
+  await makeSoftLink('./config/lazygit.yml', '~/Library/Application\ Support/lazygit/config.yml')
 }
 
 main();

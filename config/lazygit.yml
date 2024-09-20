@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
+gui:
+  showBottomLine: false
+  showPanelJumps: false
+  nerdFontsVersion: "3"
+  showDivergenceFromBaseBranch: arrowAndNumber
+  statusPanelView: allBranchesLog
+git:
+  paging:
+    colorArg: always
+    pager: delta --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
+    # externalDiffCommand: difft --color=always --display=inline --syntax-highlight=off
+  merging:
+    args: "--no-ff"
+  commitPrefix:
+    pattern: "sirenko\\/(SYNP-[0-9]+).*"
+    replace: "[$1] "
+  branchPrefix: "sirenko/"
+  parseEmoji: true
