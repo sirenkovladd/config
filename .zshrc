@@ -30,7 +30,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(mise git kubectl aws brew docker docker-compose eza helm kubectx fzf ripgrep rust asdf)
+plugins=(mise git kubectl aws brew docker docker-compose eza helm kubectx fzf rust asdf)
 
 source $ZSH/oh-my-zsh.sh
 compinit -u
@@ -54,9 +54,11 @@ alias clear="printf '\033[2J\033[3J\033[1;1H'"
 alias kitty-upgrade="curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin"
 
 # K8S
-alias k="kubectl"
 alias kx="kubectx"
 alias kn="kubens"
+
+alias m="mise"
+alias mr="m run"
 # kitty search - <ctrl>+<shift>+h
 
 # displayplacer "id:1 res:1920x1080 scaling:off origin:(0,0) degree:0" "id:2 res:1920x1080 scaling:off origin:(1920,0) degree:0"
