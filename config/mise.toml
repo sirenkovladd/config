@@ -1,5 +1,5 @@
 [tools]
-node = "20.13.1"
+node = "lts"
 watchexec = "latest"
 usage = "latest"
 zellij = "latest"
@@ -27,6 +27,10 @@ go = "latest"
 "ubi:junegunn/fzf" = "latest"
 duckdb = "latest"
 deno = "latest"
+"cargo:hexyl" = "latest"
+"cargo:bandwhich" = "latest"
+"cargo:hyperfine" = "latest"
+delta = "latest"
 
 [settings]
 legacy_version_file = true
@@ -49,6 +53,7 @@ disable_tools = [
 ] # disable specific tools, generally used to turn off core tools
 # env_file = '.env' # load env vars from a dotenv file, see `MISE_ENV_FILE`
 experimental = true
+disable_hints = ["*"]
 
 [settings.status]
 missing_tools = "always" # warn if tools are not installed

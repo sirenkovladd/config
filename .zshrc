@@ -59,6 +59,7 @@ alias kn="kubens"
 
 alias m="mise"
 alias mr="m run"
+alias zedtmp="zed $(mktemp -d)"
 # kitty search - <ctrl>+<shift>+h
 
 # displayplacer "id:1 res:1920x1080 scaling:off origin:(0,0) degree:0" "id:2 res:1920x1080 scaling:off origin:(1920,0) degree:0"
