@@ -45,7 +45,7 @@ export GPG_TTY=$(tty)
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 alias ssh="kitten ssh"
-alias ls="eza"
+alias ls="eza --icons"
 alias ll="ls -lohUmZ --git --time-style=long-iso --no-permissions"
 alias du="ncdu"
 alias lg="lazygit"
