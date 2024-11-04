@@ -33,6 +33,7 @@ delta = "latest"
 cargo-binstall = "latest"
 "pipx:httpie" = "latest"
 "cargo:joshuto" = "latest"
+"cargo:eza" = "latest"
 
 [settings]
 legacy_version_file = true

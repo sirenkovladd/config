@@ -79,6 +79,11 @@ async function main() {
     '~/Library/Application Support/lazygit/config.yml',
   );
   await makeSoftLink('./zed/settings.json', '~/.config/zed/settings.json');
+
+  await makeSoftLink('./joshuto/joshuto.toml', '~/.config/joshuto/joshuto.toml');
+  await makeSoftLink('./joshuto/icons.toml', '~/.config/joshuto/icons.toml');
+  await makeSoftLink('./joshuto/mimetype.toml', '~/.config/joshuto/mimetype.toml');
+  await makeSoftLink('./joshuto/preview_file.sh', '~/.config/joshuto/preview_file.sh');
 }
 
 main();
