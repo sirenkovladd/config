@@ -31,6 +31,8 @@ deno = "latest"
 "cargo:hyperfine" = "latest"
 delta = "latest"
 cargo-binstall = "latest"
+"pipx:httpie" = "latest"
+"cargo:joshuto" = "latest"
 
 [settings]
 legacy_version_file = true
