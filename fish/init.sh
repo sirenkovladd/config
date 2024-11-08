@@ -1,6 +1,7 @@
 # brew install fish
 
-export PATH="$HOME/.local/bin:/opt/homebrew/opt/postgresql@15/bin:/opt/homebrew/bin:$PATH"
+fish_add_path /opt/homebrew/opt/postgresql@15/bin $HOME/.cargo/bin $HOME/.local/bin /opt/homebrew/bin
+set -U GIT_EXTERNAL_DIFF difft
 ln -fs $(pwd)/fish/config.fish ~/.config/fish/config.fish
 
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher

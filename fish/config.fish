@@ -1,9 +1,7 @@
-export PATH="$HOME/.local/bin:/opt/homebrew/opt/postgresql@15/bin:/opt/homebrew/bin:$PATH"
-export GIT_EXTERNAL_DIFF=difft
-export GPG_TTY=$(tty)
-
 # export PATH="/opt/homebrew/opt/llvm@15/bin:$PATH"
 # export PATH="/opt/homebrew/opt/llvm@16/bin:$PATH"
+
+set -x GPG_TTY $(tty)
 
 if status is-interactive
     set -U fish_greeting ""
