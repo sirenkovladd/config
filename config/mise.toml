@@ -33,6 +33,11 @@ cargo-binstall = "latest"
 "pipx:httpie" = "latest"
 "cargo:joshuto" = "latest"
 "cargo:eza" = "latest"
+"cargo:broot" = "latest"
+"cargo:teehee" = "latest"
+xh = "latest"
+"ubi:printfn/fend" = "latest"
+"ubi:PaddiM8/kalker" = "latest"
 
 [settings]
 legacy_version_file = true

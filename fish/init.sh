@@ -1,6 +1,6 @@
 # brew install fish
 
-fish_add_path /opt/homebrew/opt/postgresql@15/bin $HOME/.cargo/bin $HOME/.local/bin /opt/homebrew/bin
+fish_add_path /opt/homebrew/opt/postgresql@15/bin $HOME/.cargo/bin $HOME/.local/bin /opt/homebrew/bin /Applications/kitty.app/Contents/MacOS
 set -U GIT_EXTERNAL_DIFF difft
 ln -fs $(pwd)/fish/config.fish ~/.config/fish/config.fish
 
