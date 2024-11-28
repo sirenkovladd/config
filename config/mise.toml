@@ -38,6 +38,9 @@ cargo-binstall = "latest"
 xh = "latest"
 "ubi:printfn/fend" = "latest"
 "ubi:PaddiM8/kalker" = "latest"
+"cargo:diskonaut" = "latest"
+"cargo:dua-cli" = "latest"
+neovim = "latest"
 
 [settings]
 legacy_version_file = true
