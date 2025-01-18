@@ -41,6 +41,8 @@ xh = "latest"
 "cargo:diskonaut" = "latest"
 "cargo:dua-cli" = "latest"
 neovim = "latest"
+zigmod = "r93"
+helix = "latest"
 
 [settings]
 legacy_version_file = true
