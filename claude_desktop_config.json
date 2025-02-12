@@ -27,6 +27,27 @@
       "env": {
         "_MEMORY_FILE_PATH": "path"
       }
+    },
+    "youtube": {
+      "command": "fish",
+      "args": ["-c", "npx -y @modelcontextprotocol/server-youtube"],
+      "env": {
+        "_YOUTUBE_API_KEY": "<YOUR_TOKEN>"
+      }
+    },
+    "github": {
+      "command": "fish",
+      "args": [
+        "-с",
+        "npx -y @modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "_GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN>"
+      }
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
     }
   }
 }
