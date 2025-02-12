@@ -214,7 +214,6 @@
     "FIG_NEW_SESSION": "1"
   },
   "terminal.integrated.fontFamily": "'ComicShannsMono Nerd Font'",
-  "terminal.integrated.fontSize": 11,
   "typescript.inlayHints.enumMemberValues.enabled": false,
   "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
   "typescript.inlayHints.parameterNames.enabled": "literals",
@@ -225,13 +224,9 @@
   "window.newWindowDimensions": "offset",
   "window.zoomLevel": -0.7,
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Horla",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
-  "zig.initialSetupDone": true,
-  "zig.path": "/Users/vlad/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
-  "zig.zls.path": "/Users/vlad/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -243,5 +238,10 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "biomejs.biome"
-  }
+  },
+  "workbench.colorTheme": "Horla",
+  "window.systemColorTheme": "auto",
+  "window.autoDetectColorScheme": true,
+  "zig.zls.enabled": "on",
+  "files.autoSave": "onFocusChange"
 }

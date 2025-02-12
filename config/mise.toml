@@ -14,7 +14,7 @@ kubectl = "latest"
 redis = "latest"
 ripgrep = "latest"
 zoxide = "latest"
-zig = "latest"
+zig = "ref:master"
 bun = "latest"
 python = "latest"
 k9s = "latest"
@@ -43,6 +43,7 @@ xh = "latest"
 neovim = "latest"
 zigmod = "r93"
 helix = "latest"
+jc = "latest"
 
 [settings]
 legacy_version_file = true
