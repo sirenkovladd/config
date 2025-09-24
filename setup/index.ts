@@ -1,6 +1,6 @@
+import diff from "fast-diff";
 import { lstat, readFile, readlink, rm, symlink } from "node:fs/promises";
 import { resolve } from "node:path";
-import diff from "fast-diff";
 
 const HOME = process.env.HOME || "~";
 
@@ -90,6 +90,7 @@ async function main() {
     "./config/lazygit.yml",
     "~/Library/Application Support/lazygit/config.yml",
   );
+  await makeSoftLink("./config/mise.toml", "~/.config/mise/config.toml");
   await copyConfig("zed", "settings.json");
   await copyConfig("joshuto", "joshuto.toml");
   await copyConfig("joshuto", "icons.toml");

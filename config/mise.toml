@@ -1,5 +1,5 @@
 [tools]
-node = "lts"
+node = "24"
 watchexec = "latest"
 usage = "latest"
 zellij = "latest"
@@ -13,8 +13,7 @@ jq = "latest"
 kubectl = "latest"
 redis = "latest"
 ripgrep = "latest"
-zoxide = "latest"
-zig = "ref:master"
+zig = "latest"
 bun = "latest"
 python = "latest"
 k9s = "latest"
@@ -41,9 +40,15 @@ xh = "latest"
 "cargo:diskonaut" = "latest"
 "cargo:dua-cli" = "latest"
 neovim = "latest"
-zigmod = "r93"
+zigmod = "r94"
 helix = "latest"
 jc = "latest"
+superfile = "latest"
+aqua = "latest"
+"ubi:AmmarAbouZor/tui-journal" = { version = "latest", exe = "tjournal" }
+"aqua:lusingander/serie" = "latest"
+bombardier = "latest"
+"npm:@google/gemini-cli" = "latest"
 
 [settings]
 legacy_version_file = true
@@ -72,3 +77,5 @@ disable_hints = ["*"]
 missing_tools = "always" # warn if tools are not installed
 show_env = false         # show configured env vars
 show_tools = false       # show active tools
+
+[settings.node]
