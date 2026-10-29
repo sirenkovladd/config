@@ -1,0 +1,8 @@
+{
+  "bun.runtime": "/Users/vlad/.local/share/mise/shims/bun",
+  "python.defaultInterpreterPath": "/Users/vlad/.local/share/mise/installs/python/3.13.7/bin/python",
+  "debug.javascript.defaultRuntimeExecutable": {
+    "pwa-node": "/Users/vlad/.local/share/mise/shims/node"
+  },
+  "zig.path": "/Users/vlad/.local/share/mise/installs/zig/0.15.1/bin/zig"
+}

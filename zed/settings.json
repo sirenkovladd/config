@@ -1,4 +1,22 @@
 {
+  "cli_default_open_behavior": "new_window",
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "theme": {
     "mode": "system",
     "light": "One Light",
@@ -8,7 +26,7 @@
   "buffer_font_family": "ComicShannsMono Nerd Font",
   "vim_mode": false,
   "ui_font_size": 12,
-  "buffer_font_size": 12,
+  "buffer_font_size": 13.0,
   "preferred_line_length": 100,
   "soft_wrap": "editor_width",
   "show_whitespaces": "all",

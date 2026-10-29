@@ -10,18 +10,15 @@ bottom = "latest"
 dust = "latest"
 fd = "latest"
 jq = "latest"
-kubectl = "latest"
-redis = "latest"
 ripgrep = "latest"
 zig = "latest"
 bun = "latest"
-python = "latest"
+python = "3.12"
 k9s = "latest"
 starship = "latest"
 rclone = "latest"
 "cargo:ezno" = "latest"
 go = "latest"
-"ubi:junegunn/fzf" = "latest"
 duckdb = "latest"
 deno = "latest"
 "cargo:hexyl" = "latest"
@@ -32,28 +29,51 @@ cargo-binstall = "latest"
 "pipx:httpie" = "latest"
 "cargo:joshuto" = "latest"
 "cargo:eza" = "latest"
-"cargo:broot" = "latest"
 "cargo:teehee" = "latest"
 xh = "latest"
-"ubi:printfn/fend" = "latest"
-"ubi:PaddiM8/kalker" = "latest"
 "cargo:diskonaut" = "latest"
-"cargo:dua-cli" = "latest"
 neovim = "latest"
 zigmod = "r94"
 helix = "latest"
-jc = "latest"
 superfile = "latest"
 aqua = "latest"
-"ubi:AmmarAbouZor/tui-journal" = { version = "latest", exe = "tjournal" }
 "aqua:lusingander/serie" = "latest"
-bombardier = "latest"
-"npm:@google/gemini-cli" = "latest"
+rust = "latest"
+"pipx:pgcli" = "latest"
+"cargo:navi" = "latest"
+"go:github.com/mitranim/gow" = "latest"
+java = "21"
+cloudflared = "latest"
+"npm:@kilocode/cli" = "latest"
+gcloud = "latest"
+"cargo:fresh-editor" = "latest"
+gopass = "latest"
+age = "latest"
+"npm:@googleworkspace/cli" = "latest"
+topgrade = "latest"
+"npm:port-whisperer" = "latest"
+pi = "latest"
+gh = "latest"
+rtk = "latest"
+"github:Genymobile/scrcpy" = "latest"
+fzf = "latest"
+"github:hzqtc/taproom" = "latest"
+"aqua:protocolbuffers/protobuf/protoc" = "latest"
+"aqua:git-lfs/git-lfs" = "latest"
+"aqua:fish-shell/fish-shell" = "latest"
+zoxide = "latest"
+yazi = "latest"
+ffmpeg = "latest"
+imagemagick = "latest"
+"github:dalance/procs" = "latest"
+"npm:vscode-langservers-extracted" = "latest"
+just = "latest"
+"github:webstonehq/tuxedo" = "latest"
+"github:1broseidon/ketch" = "latest"
 
 [settings]
 legacy_version_file = true
 legacy_version_file_disable_tools = ['python']
-plugin_autoupdate_last_check_duration = '1 week'
 # trusted_config_paths = ['~/node', '~/programming']
 verbose = false               # set to true to see full installation output, see `MISE_VERBOSE`
 asdf_compat = false           # set to true to ensure .tool-versions will be compatible with asdf, see `MISE_ASDF_COMPAT`
@@ -61,17 +81,18 @@ jobs = 4                      # number of plugins or runtimes to install in para
 raw = false                   # set to true to directly pipe plugins to stdin/stdout/stderr
 yes = false                   # set to true to automatically answer yes to all prompts
 not_found_auto_install = true # see MISE_NOT_FOUND_AUTO_INSTALL
-task_output = "prefix"        # see Tasks Runner for more information
+task.output = "prefix"
 paranoid = false              # see MISE_PARANOID
 
 # shorthands_file = '~/.config/mise/shorthands.toml' # path to the shorthands file, see `MISE_SHORTHANDS_FILE`
-disable_default_shorthands = false # disable the default shorthands, see `MISE_DISABLE_DEFAULT_SHORTHANDS`
+# disable_default_shorthands = false # disable the default shorthands, see `MISE_DISABLE_DEFAULT_SHORTHANDS`
 disable_tools = [
     # 'node',
 ] # disable specific tools, generally used to turn off core tools
 # env_file = '.env' # load env vars from a dotenv file, see `MISE_ENV_FILE`
 experimental = true
 disable_hints = ["*"]
+minimum_release_age = "8h"
 
 [settings.status]
 missing_tools = "always" # warn if tools are not installed
@@ -79,3 +100,6 @@ show_env = false         # show configured env vars
 show_tools = false       # show active tools
 
 [settings.node]
+
+[bootstrap.brew.taps]
+"tailscale/tailcat" = "https://github.com/tailscale/homebrew-tailcat.git"

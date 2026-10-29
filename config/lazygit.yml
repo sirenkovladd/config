@@ -6,14 +6,17 @@ gui:
   showDivergenceFromBaseBranch: arrowAndNumber
   statusPanelView: allBranchesLog
 git:
-  paging:
-    colorArg: always
-    # pager: delta --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
-    # externalDiffCommand: difft --color=always --display=inline --syntax-highlight=off
+  overrideGpg: true
+  diffRenderers:
+    - colorArg: always
+      # pager: delta --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
+      # externalDiffCommand: difft --color=always --display=inline --syntax-highlight=off
+
+      type: rawGit
   merging:
     args: "--no-ff"
   commitPrefix:
-    pattern: "sirenko\\/(SYNP-[0-9]+).*"
-    replace: "[$1] "
+    - pattern: "sirenko\\/(SYNP-[0-9]+).*"
+      replace: "[$1] "
   branchPrefix: "sirenko/"
   parseEmoji: true
